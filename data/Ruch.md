@@ -11,7 +11,7 @@ Ciało lub zbiór ciał względem których opisuje się ruch innego ciała.
 Krzywa geometryczna utworzona przez punkty określające kolejne położenia ciał w przestrzeni.
 
 # Równanie toru ruchu
-Eliminując czas z równania ruchu otrzymamy równanie krzywej toru ruchu. *(na przykład rzutu ukośnego otrzymamy parabolę)
+Eliminując czas z równania ruchu otrzymamy równanie krzywej toru ruchu. *(na przykład rzutu ukośnego otrzymamy parabolę)*
 
 # Droga
 *(wielkość skalarna)*
@@ -36,4 +36,43 @@ Wielkość wektorowa, prędkość w danej chwili wyznaczana dla nieskończenie k
 
 $$
 \vec{v}(t)_{ch} = \lim{\frac{\Delta \vec{r}}{\Delta t}} = \frac{d\vec{r}}{dt}
+$$
+
+# Przyspiesznie
+Wielkość wektorowa, która określa zmiany wektora prędkości w czasie. *(zarówno wartości jak i kierunku)*
+
+# Przyspieszenie średnie
+Iloraz zmiany prędkości i czasu, w którym ta zmiana nastąpiła.
+
+$$
+\vec{a}(t)_{sr} = \frac{\Delta \vec{v}}{\Delta t}
+$$
+
+# Przyspieszenie chwilowe
+Szybkość zmiany prędkości w czasie
+
+$$
+\vec{v}(t)_{ch} = \lim_{\Delta t \rightarrow 0}{\frac{\Delta \vec{v}}{\Delta t}} = \frac{d\vec{v}}{dt}
+$$
+
+# Ruch prostoliniowy jednostajnie zmienny
+Ruch prostoliniowy z przyspieszeniem nie zmieniającym się w czasie.
+
+$$
+x(t) = x_0 + v_0t + \frac{at^2}{2}
+$$
+
+# Spadek swobodny
+Spadek swobodny to ruch ciała wyłącznie z przyspieszeniem ziemskim. W chwili początkowej ciało spoczywa i następnie puszczone porusza się ruchem jednostajnie przyspieszonym z przyspieszeniem grawitacyjnym **g**
+
+$$
+h = \frac{g \cdot t^2}{2}
+$$
+
+h - wysokość
+
+# Zasięg rzutu ukośnego
+
+$$
+x(t_0) = \frac{2v_0^2 \cdot \sin{\theta} \cdot \cos{\theta}}{g}
 $$
