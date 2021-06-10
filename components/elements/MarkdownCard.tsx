@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 /** @jsxImportSource @emotion/react */
 import { jsx, css } from '@emotion/react'
 import ReactMarkdown from 'react-markdown'
@@ -6,11 +6,15 @@ import gfm from 'remark-gfm'
 import RemarkMathPlugin from 'remark-math';
 import rehypeKatex from 'rehype-katex'
 
-export default function MarkdownCard({title, content}: {title: string, content: string}) {
-  const [isOpen, setOpen] = useState(false);
+export default function MarkdownCard({title, content, open}: {title: string, content: string, open?: boolean}) {
+  const [isOpen, setOpen] = useState(open);
+  const scrollRef = useRef(null);
+  // useEffect(() => {
+  //   if (open && scrollRef) scrollRef.current.scrollIntoViev({ behavior: 'smooth', block: 'start' });
+  // }, [open])
 
   return (
-    <div className="card" css={css`margin-bottom: 25px`}>
+    <div className="card" css={css`margin-bottom: 25px`} ref={scrollRef}>
       <header className="card-header" onClick={() => {setOpen(!isOpen)}}>
         <p className="card-header-title">
           {title}

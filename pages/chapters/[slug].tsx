@@ -5,18 +5,19 @@ import path from 'path'
 import slug from 'limax'
 /** @jsxImportSource @emotion/react */
 import { jsx, css } from '@emotion/react'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import MarkdownCard from '../../components/elements/MarkdownCard'
 
 export default function Chapter({chapter}: InferGetStaticPropsType<typeof getStaticProps>) {
-  const {query: {slug}} = useRouter();
+  const {query: {slug, q}} = useRouter();
+  const scrollTargetRef = useRef(null)
 
   return (
     <>
       <h1 className="title">{chapter.name}</h1>
       <hr></hr>
       {chapter.parts.map((part, index) => {
-        return <MarkdownCard title={part.title} content={part.content} key={index} />
+        return <MarkdownCard title={part.title} content={part.content} key={index} open={part.title === q} />
       })}
       
     </>

@@ -10,6 +10,7 @@ export default function Chapters({chapters}: InferGetStaticPropsType<typeof getS
       <p className="title">
         Zagadnienia
       </p>
+     
 
       {chapters.map(chapter => {
         return (
@@ -34,6 +35,7 @@ export const getStaticProps = async (ctx) => {
     const parsed = path.parse(filename)
     return {
       name: parsed.name,
+      filename: filename,
       slug: slug(parsed.name)
     }
   })

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from '@emotion/react'
 
 function NavbarItem({text, href, icon, isActive}: {text: string, href: string, icon: string | null, isActive: boolean}) {
   return (
@@ -23,28 +25,22 @@ export const Navbar = () => {
         <div className="container">
           <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
+
               <Link href="/">
-                <a className="">
-                  <div className="navbar-item pr-5 with-icon">
+                  <div className="is-clickable navbar-item pr-5 with-icon">
                     <span className="icon"><i className="ri-meteor-line"></i></span>
                     <span className="title is-5 icon-text">Fizykapp</span>
-                    
                   </div>
-                </a>
               </Link>
-              {/* <a role="button" onClick={() => setMenuOpen(!menuOpen)} className={`navbar-burger burger ${menuOpen ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navigation">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a> */}
-            </div>
+              
+              <div className="is-flex-grow-5 is-clearfix">
+                <Link href="/search">
+                  <div className="is-clickable navbar-item pr-5 is-pulled-right with-icon" css={css`height: 52px;`}>
+                    <span className="icon"><i className="ri-search-line"></i></span>
+                  </div>
+                </Link>
+              </div>
 
-            <div id="navigation" className={`navbar-menu ${menuOpen ? 'is-active' : ''}`}>
-              <div className="navbar-start">
-              </div>
-              <div className="navbar-end">
-                
-              </div>
             </div>
           </nav>
         </div>

@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 /** @jsxImportSource @emotion/react */
 import { jsx, css } from '@emotion/react'
-import ReactMarkdown from 'react-markdown';
 
 type props = {
   title: string;
@@ -13,7 +12,7 @@ type props = {
 
 export default function LinkCard({title, subtitle, href, disabled = false}: props) {
   return (
-    <div className="card" css={css`margin-bottom: 20px;`}>
+    <div className={`card ${href ? "is-clickable" : ""}`} css={css`margin-bottom: 20px;`}>
       <div className="card-content">
         <div className="content">
           {href && 

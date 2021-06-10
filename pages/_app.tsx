@@ -31,7 +31,9 @@ function Fizykapp({ Component, pageProps }) {
     <Navbar />
 
     <div className="container is-fluid">
-      <Component {...pageProps} />
+      <div className="container">
+        <Component {...pageProps} />
+      </div>
     </div>
 
   </>
