@@ -1,11 +1,21 @@
 # Podstawowe odziaływania
-test **test!!**
 
-$$
-L = \frac{1}{2} \rho v^2 S C_L
-$$
+* Grawitacyjne (*źródło*: masa)
+* Elektromagnetyczne (*źródło*: łądunek elektryczny)
+* Jądrowe (*źródło*: protony, neutrony)
+* Grawitacyjne (*źródło*: cząstki elementarne)
 
 # Jednostki układu SI
+
+* **m** metr
+* **kg** kilogram
+* **s** sekunda
+* **A** amper
+* **K** kelwin
+* **cd** kandela
+* **mol** mol
+* **rad** radian
+* **sr** steradian
 
 # Wielkości fizyczne
 
