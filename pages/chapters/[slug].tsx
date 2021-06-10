@@ -3,45 +3,10 @@ import { promises as fs } from 'fs'
 import { InferGetStaticPropsType } from 'next'
 import path from 'path'
 import slug from 'limax'
-import ReactMarkdown from 'react-markdown'
-import gfm from 'remark-gfm'
-import RemarkMathPlugin from 'remark-math';
-import rehypeKatex from 'rehype-katex'
 /** @jsxImportSource @emotion/react */
 import { jsx, css } from '@emotion/react'
-import { useState } from 'react'
-
-function MarkdownCard({title, content}: {title: string, content: string}) {
-  const [isOpen, setOpen] = useState(false);
-
-  return (
-    <div className="card" css={css`margin-bottom: 25px`}>
-      <header className="card-header" onClick={() => {setOpen(!isOpen)}}>
-        <p className="card-header-title">
-          {title}
-        </p>
-        <span className="card-header-icon">
-          <span className="icon">
-            <i className={!isOpen ? "ri-arrow-right-s-line" : "ri-arrow-down-s-line"}></i>
-          </span>
-        </span>
-      </header>
-      
-      {isOpen && 
-        <div className="card-content">
-          <div className="content">
-            <ReactMarkdown
-              remarkPlugins={[gfm, RemarkMathPlugin]}
-              rehypePlugins={[rehypeKatex]}
-            >
-              {content}
-            </ReactMarkdown>
-          </div>
-        </div>
-      }
-    </div>
-  )
-}
+import React, { useState } from 'react'
+import MarkdownCard from '../../components/elements/MarkdownCard'
 
 export default function Chapter({chapter}: InferGetStaticPropsType<typeof getStaticProps>) {
   const {query: {slug}} = useRouter();
