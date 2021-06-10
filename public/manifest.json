@@ -1,0 +1,12 @@
+{
+  "name": "Fizykapp",
+  "short_name": "Fizykapp",
+  "theme_color": "#ffffff",
+  "background_color": "#004740",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  
+  "splash_pages": null
+}
