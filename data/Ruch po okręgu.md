@@ -55,6 +55,6 @@ $$
 
 $\bold\omega \left[\frac{1}{s}\right]$ - prędkość kątowa
 $\bold\alpha \left[ \frac{rad}{s^{2}}\right]$ - przyspieszenie kątowe
-<$r$ - promień ( okrągłego toru ruchu ciała )
+$r$ - promień ( okrągłego toru ruchu ciała )
 
 
