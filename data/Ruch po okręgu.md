@@ -17,8 +17,11 @@ a_s = \frac{dv}{dt} = \left| \vec{\alpha} \times\ \vec{r} \rvert = \lvert \frac{
 $$
 
 $\omega$ - prędkość kątowa [1/s]
+
 $\alpha$ - przyspieszenie kątowe
+
 $v$ - prędkość liniowa
+
 $r$ - promień okrągłego toru ruchu ciała
  
 # Przyspieszenie kątowe
@@ -38,6 +41,7 @@ W ruchu jednostajnym, czas potrzebny na przebycie pełnego okręgu.
 $$
 T = \frac{2 \pi}{\omega}
 $$
+
 $\omega$ - prędkość kątowa [1/s]
 
 # Częstotliwość
@@ -54,7 +58,9 @@ a_{r} = \omega^{2}r = \alpha^{2}rt^{2}
 $$
 
 $\bold\omega \left[\frac{1}{s}\right]$ - prędkość kątowa
+
 $\bold\alpha \left[ \frac{rad}{s^{2}}\right]$ - przyspieszenie kątowe
+
 $r$ - promień ( okrągłego toru ruchu ciała )
 
 
