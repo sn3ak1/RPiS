@@ -1,6 +1,6 @@
 {
-  "name": "Fizykapp",
-  "short_name": "Fizykapp",
+  "name": "RPiS",
+  "short_name": "RPiS",
   "theme_color": "#ffffff",
   "background_color": "#404040",
   "display": "standalone",

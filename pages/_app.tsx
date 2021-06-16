@@ -7,7 +7,7 @@ import 'katex/dist/katex.min.css'
 import React from 'react'
 
 
-function Fizykapp({ Component, pageProps }) {
+function RPiS({ Component, pageProps }) {
   return (
   <>
     <Head>
@@ -15,9 +15,9 @@ function Fizykapp({ Component, pageProps }) {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name='apple-mobile-web-app-capable' content='yes' />
       <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-      <meta name='apple-mobile-web-app-title' content="Fizykapp"/>
+      <meta name='apple-mobile-web-app-title' content="RPiS"/>
       <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
-      <meta name='application-name' content="Fizykapp" />
+      <meta name='application-name' content="RPiS" />
       <meta name='format-detection' content='telephone=no' />
       <meta name='mobile-web-app-capable' content='yes' />
       <meta
@@ -25,7 +25,7 @@ function Fizykapp({ Component, pageProps }) {
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
       />
       <link rel="manifest" href="/manifest.json" />
-      <title>Fizykapp</title>
+      <title>RPiS</title>
     </Head>
 
     <Navbar />
@@ -40,4 +40,4 @@ function Fizykapp({ Component, pageProps }) {
   ) 
 }
 
-export default Fizykapp
+export default RPiS

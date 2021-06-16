@@ -29,7 +29,7 @@ export const Navbar = () => {
               <Link href="/">
                   <div className="is-clickable navbar-item pr-5 with-icon">
                     <span className="icon"><i className="ri-meteor-line"></i></span>
-                    <span className="title is-5 icon-text">Fizykapp</span>
+                    <span className="title is-5 icon-text">RPiS</span>
                   </div>
               </Link>
               
